@@ -1,0 +1,106 @@
+.pokedex-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+    background-image: url('../../images/PokemonBDSP.jfif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container_headerANDaside{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.pokedex-container_title{
+    width: 100%;
+}
+.pokedex-container_header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pokedex-container_greeting{
+    margin: 0;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pokedex-container_greeting span{
+    color: #fe1936;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.pokedex-container_aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+.pokedex-container_main{
+    padding-bottom: 20px;
+}
+.card-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/*responsive tablet*/
+
+@media (min-width: 768px){
+    .card-container{
+        gap: 40px;
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+    
+}
+
+/*responsive laptop*/
+
+@media (min-width: 1000px){
+    .card-container{
+        gap: 50px;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+    .pokedex-container_title{
+        width: 100vh;
+    }
+}
+
+/*responsive laptop L*/
+
+@media (min-width: 1440px){
+    .pokedex-container_greeting{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .pokedex-container_greeting span{
+        text-transform: uppercase;
+        font-size: 38px;
+        font-weight: 800;
+    }
+    .card-container{
+        gap: 60px;
+        display: grid;
+        grid-template-columns: 450px 450px 450px;
+    }
+}

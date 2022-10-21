@@ -1,0 +1,117 @@
+.pagination{
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inactive{
+    margin: 0;
+    padding: 0 2px;
+    width: 24px;
+    height: 20px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 9px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    color: black;
+    border-color: #eee;
+    transition: 0.5s;
+}
+.btnPageNext,
+.btnPagePrev{
+    margin: 0;
+    padding: 0 2px;
+    width: 24px;
+    height: 20px;
+    font-family: inherit;
+    font-weight: 800;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fe1936;
+    color: white;
+    border: 1.5px solid;
+    border-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    margin: 0;
+    padding: 0 2px;
+    width: auto;
+    min-width: 24px;
+    height: 24px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    cursor: pointer;
+    box-shadow: 0 0 9px #fe1936;
+    border: 1.5px solid;
+    border-color: #101010;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*responsive tablet*/
+
+@media (min-width: 768px){
+    .inactive{
+        width: 26px;
+        height: 22px;
+    }
+    .active{
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/*responsive laptop*/
+
+@media (min-width: 1000px){
+    .inactive{
+        width: 28px;
+        height: 24px;
+        font-size: 10px;
+    }
+    .active{
+        width: 28px;
+        height: 28px;
+        font-size: 11px;
+    }
+}
+
+/*responsive laptop L*/
+
+@media (min-width: 1440px){
+    .inactive{
+        width: 36px;
+        height: 32px;
+        font-size: 12px;
+    }
+    .active{
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+    }
+    .btnPageNext,
+    .btnPagePrev{
+        width: 36px;
+        height: 32px;
+        font-weight: 800;
+    }
+}
