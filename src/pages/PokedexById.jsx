@@ -34,9 +34,9 @@ const PokedexById = () => {
       <section className='pokedexById_section-name'>
         <h3 className='section-name_id'>#{pokemon?.id}</h3>
         <div className='section-name_container-name'>
-          <hr />
+          <div className='hr'></div>
           <h2 className='section-name_name'>{pokemon?.name}</h2>
-          <hr />
+          <div className='hr'></div>
         </div>
         
       </section>
